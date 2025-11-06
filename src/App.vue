@@ -1,15 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <section>
+    <h2>
+      Music List
+    </h2>
+    <ul>
+      <li>
+        Artist 1
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return {
+      ChristianMusic: [
+        {
+          id: '1',
+          name: 'Play1',
+          artist: 'artist-one',
+          date_released: '12/1/2025' 
+        },
+        {
+          id: '2',
+          name: 'Play2',
+          artist: 'artist-two',
+          date_released: '1/10/2024' 
+        },
+        
+      ]
+    }
   }
 }
 </script>
