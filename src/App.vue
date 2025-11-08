@@ -1,13 +1,9 @@
 <template>
   <section>
     <h2>
-      Music List
+      Simple Calculator
     </h2>
-    <ul>
-      <li>
-        Artist 1
-      </li>
-    </ul>
+    <calculator-buttons></calculator-buttons>
   </section>
 </template>
 
@@ -16,21 +12,21 @@
 export default {
   data(){
     return {
-      ChristianMusic: [
-        {
-          id: '1',
-          name: 'Play1',
-          artist: 'artist-one',
-          date_released: '12/1/2025' 
-        },
-        {
-          id: '2',
-          name: 'Play2',
-          artist: 'artist-two',
-          date_released: '1/10/2024' 
-        },
+      // ChristianMusic: [
+      //   {
+      //     id: '1',
+      //     name: 'Play1',
+      //     artist: 'artist-one',
+      //     date_released: '12/1/2025' 
+      //   },
+      //   {
+      //     id: '2',
+      //     name: 'Play2',
+      //     artist: 'artist-two',
+      //     date_released: '1/10/2024' 
+      //   },
         
-      ]
+      // ]
     }
   }
 }
