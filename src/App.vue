@@ -1,9 +1,11 @@
 <template>
   <section>
     <h2>
-      Simple Calculator
+      Outings For the Month
     </h2>
-    <calculator-buttons></calculator-buttons>
+    <!-- <calculator-buttons></calculator-buttons> -->
+     <fun-day v-for="fun in funList" :key="fun.id" :location="fun.location" :event-type="fun.event" :artist="fun.artist" :is-fun="true" ></fun-day>
+     
   </section>
 </template>
 
@@ -12,27 +14,28 @@
 export default {
   data(){
     return {
-      // ChristianMusic: [
-      //   {
-      //     id: '1',
-      //     name: 'Play1',
-      //     artist: 'artist-one',
-      //     date_released: '12/1/2025' 
-      //   },
-      //   {
-      //     id: '2',
-      //     name: 'Play2',
-      //     artist: 'artist-two',
-      //     date_released: '1/10/2024' 
-      //   },
-        
-      // ]
+      
+      funList : [
+        {
+          key: "ikeja",
+          location: "Lagos Ikeja",
+          event: "LagosFest",
+          artist: "Davido",
+        },
+        {
+          key: "ajah",
+          location: "Lagos Ajah",
+          event: "AI Empowerment",
+          artist: "Ai Lord",
+        }
+      ]
+       
     }
   }
 }
 </script>
 
-<style>
+<!-- <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,4 +44,20 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+</style> -->
+<style>
+*{
+    box-sizing: border-box;
+}
+h2{
+    color: red;
+    background-color: yellow;
+}
+ h3 {
+    border:2px solid gray;
+    padding: 20px;
+ }
+ button {
+    background-color: blue;
+ }
 </style>
